@@ -63,6 +63,18 @@ if audios:
     audio_bytes = open(audio_file_path, 'rb').read()
     st.audio(audio_bytes, format='audio/mp3')
 
+# --- Journal Entry Input ---
+st.subheader("📓 Journal Entry")
+journal_text = st.text_area("Write your thoughts here:", height=200, key="journal_entry")
+
+# --- Reflect with Iris ---
+if journal_text:
+    if st.button("💬 Reflect with IrisAI"):
+        with st.spinner("IrisAI is reflecting..."):
+            iris_response = generate_iris_response(journal_text)
+        st.subheader("🌸 IrisAI Reflects")
+        st.info(iris_response)
+
 # Prompt + Journal
 st.subheader("🪞 Reflective Prompt")
 prompt = generate_prompt(level)
