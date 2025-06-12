@@ -3,6 +3,7 @@ import os
 from datetime import datetime
 import random
 from transformers import pipeline
+import csv
 
 # --- Constants ---
 MEDIA_DIR = "media"
@@ -75,6 +76,15 @@ if journal_text:
         st.subheader("🌸 IrisAI Reflects")
         st.info(iris_response)
 
+        # --- Feedback Section ---
+        st.markdown("#### 🙏 Was this reflection helpful?")
+        col1, col2 = st.columns(2)
+        with col1:
+            if st.button("👍 Yes"):
+                st.success("Thank you for your feedback 💖")
+        with col2:
+            if st.button("👎 No"):
+                st.warning("Thanks! We'll use this to improve 🌱")
 # Prompt + Journal
 st.subheader("🪞 Reflective Prompt")
 prompt = generate_prompt(level)
