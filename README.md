@@ -1,3 +1,12 @@
+---
+title: AlignedIris
+emoji: "🌸"
+color: "pink"
+sdk: streamlit
+app_file: app.py
+pinned: true
+---
+
 # 🌸 AlignedIris — The Flow-Centered Reflective Assistant
 
 **AlignedIris** is a personal reflection and journaling tool designed for those seeking clarity, kindness, and momentum. Powered by a blend of Daoist insight, executive function research, and sophisticated AI reflection logic, AlignedIris helps you enter flow gently and meaningfully.
@@ -22,7 +31,7 @@
 4. Click **“Reflect with Iris”**
 5. Receive tailored insights grounded in compassion and clarity
 
----
+--
 
 ## 🛠 Requirements
 
