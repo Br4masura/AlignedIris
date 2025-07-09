@@ -1,9 +1,14 @@
 ---
+
+
+
+
+
 title: AlignedIris
 emoji: "🌸"
 color: "pink"
 sdk: streamlit
-app_file: app.py
+app_file: aligned_iris_main/app.py
 pinned: true
 ---
 
