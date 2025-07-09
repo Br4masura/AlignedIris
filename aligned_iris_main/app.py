@@ -35,15 +35,15 @@ st.title("🌸 AlignedIris")
 st.markdown("A reflective assistant to help you reconnect with clarity, balance, and gentle momentum.")
 
 # 🌌 Visual toggle
-if st.checkbox("Enable Cosmic Background"):
-    set_background("iris_assets/visuals/stars1.jpg")
+if st.checkbox("Enable Alternative Background"):
+    set_background("iris_assets/visual/impressionisticPainting.jpg")
 
 # 🎧 Audio toggle
-audio_choice = st.selectbox("Background Audio", ["None", "Tibetan Bowls", "Debussy (Classical)"])
+audio_choice = st.selectbox("Background Audio", ["None", "Tibetan Bowls", "Meditative Piano (Classical)"])
 if audio_choice == "Tibetan Bowls":
     play_audio("iris_assets/audio/meditations.mp3")
-elif audio_choice == "Debussy (Classical)":
-    play_audio("iris_assets/audio/debussy.mp3")
+elif audio_choice == "Meditative Piano (Classical)":
+    play_audio("iris_assets/audio/slow.mp3")
 
 # 🎭 Tone selector
 style = st.selectbox("Choose IrisAI's Reflection Style", ["Default", "Rational", "Poetic", "Humorous"])
