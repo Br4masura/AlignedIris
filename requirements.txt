@@ -6,5 +6,4 @@ scikit-learn
 numpy
 pandas
 Pillow
-Key: HF_API_KEY
-Value: Secrets-S3cr3ts-4R3-N0-FUN-Unl355-U-Sh4r3-W1Th-Ev3rY1
+Git-lfs

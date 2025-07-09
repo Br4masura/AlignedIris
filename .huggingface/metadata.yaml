@@ -1,0 +1,7 @@
+title: AlignedIris
+emoji: 🌸
+colorFrom: pink
+colorTo: indigo
+sdk: streamlit
+app_file: app.py
+license: apache-2.0
